@@ -16,7 +16,7 @@ const Home: NextPage = () => (
     <Head>
       <title>TX Labs</title>
       <meta name="description" content="TX Labs" />
-      <link rel="icon" href="/png/fav.png" />
+      <link rel="icon" href="/fav.png" />
     </Head>
     <HeroSection />
     <ApplicationsSectionOne />
