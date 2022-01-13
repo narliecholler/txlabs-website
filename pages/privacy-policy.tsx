@@ -6,7 +6,7 @@ const PrivacyPolicy: NextPage = () => (
     <Head>
       <title>TX Labs</title>
       <meta name="description" content="TX Labs" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/png/fav.png" />
     </Head>
     <div className="container py-8 space-y-4">
       <h1>Privacy Policy</h1>

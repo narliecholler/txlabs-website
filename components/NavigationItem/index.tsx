@@ -26,7 +26,7 @@ const NavigationItem = ({ item }: NavigationItemProps) => {
         <span className="pr-1 text-lg font-display group-hover:text-[#37D19B]">{item.title}</span>
         <IoChevronDownOutline size={20} className="group-hover:text-[#37D19B]" />
       </div>
-      <ul className={`hidden group-hover:block absolute w-64 ml-[-3%] top-[93px] p-8 pt-5 space-y-4 bg-black border border-[#2c2c2c] rounded-lg bg-gradient-to-t from-[#1d0040] to-[#0c0c0c]`}>
+      <ul className={`z-[10] hidden group-hover:block absolute w-64 ml-[-3%] top-[93px] p-8 pt-5 space-y-4 bg-black border border-[#2c2c2c] rounded-lg bg-gradient-to-t from-[#1d0040] to-[#0c0c0c]`}>
         <span className="absolute w-6 h-6 bg-[#0c0c0c] rounded-full -top-2 left-[23%]" />
         {item.children.map((child, index) => (
           <li
