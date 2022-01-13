@@ -1,0 +1,220 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  custom styles with important exist to override package styles that are layered in.
+*/
+
+
+@layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+  body {
+    @apply antialiased text-white bg-black overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-black font-display;
+  }
+
+  h1 {
+    @apply text-[2.4rem] leading-[3.2rem] lg:leading-[5.5rem] lg:text-[5rem]
+  }
+
+  h2 {
+    @apply text-[2em] leading-[2.5rem] lg:text-[2.5rem] lg:leading-[3rem]
+  }
+
+  h3 {
+    @apply text-[1.6rem] leading-[2rem] lg:text-[2rem] lg:leading-[2.5rem]
+  }
+
+  p {
+    @apply font-body text-[1rem];
+  }
+
+  header .container,
+  .roadmap-section-header {
+    border-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0) 2%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0) 100%
+      )
+      99% 0 99% 0/0 0 1px 0 stretch;
+  }
+}
+
+@layer utilities {
+  .email > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    position: relative;
+  }
+
+  .email > div > input {
+    width: 100%;
+    padding-right: 45px;
+  }
+
+  .email > div > button {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    border: none;
+  }
+
+}
+
+@layer components {
+
+  #innerHeader, #footer {
+    @apply lg:max-w-[90rem] lg:m-auto lg:pl-[6rem] lg:pr-[6rem]
+  }
+
+  .section {
+    @apply lg:max-w-[90rem] lg:m-auto lg:pl-[6rem] lg:pr-[6rem]
+  }
+
+  .button {
+    @apply block px-4 py-3 text-lg border-2 border-white rounded-lg font-display;
+  }
+
+  .card {
+    @apply bg-[#8b8b8b] bg-opacity-20 rounded-lg;
+  }
+
+  .text-scrambler > div {
+    @apply h-[9rem] w-[80%] lg:w-[75%] lg:max-w-xl mx-auto overflow-hidden text-center font-normal;
+  }
+
+  .text-scrambler span {
+    @apply text-lg font-display;
+  }
+
+  .information-swiper .swiper {
+    @apply space-y-8;
+  }
+
+  .information-swiper {
+    z-index: 99;
+  }
+
+  .information-swiper .swiper-pagination {
+    @apply flex items-center gap-10 pr-[3.5rem] pb-[3rem] bottom-[unset];
+  }
+
+  .information-swiper .swiper-wrapper {
+    padding-top: 3rem!important;
+  }
+
+  .information-swiper .swiper-pagination {
+    height: 56px!important;
+    bottom: unset!important;
+    padding-bottom: 0!important;
+    gap: 1.2rem!important;
+  }
+  
+  .information-swiper .swiper-pagination-bullet {
+    height: 100%;
+    width: 70px!important;
+    border-radius: 0!important;
+  }
+
+  .information-swiper .swiper-pagination-bullet {
+    @apply text-4xl font-black opacity-10 font-display bg-transparent;
+  }
+
+  .useCaseSwiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background-color: white;
+  }
+
+  .useCaseSwiper {
+    padding-bottom: 3rem!important;
+  }
+
+  .useCaseSwiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: white!important;
+  } 
+
+  .useCaseSwiper .swiper-pagination .swiper-pagination-bullet {
+    background: rgba(128, 128, 128, 0.8)!important;
+  } 
+
+  .useCaseSwiper .swiper-scrollbar{
+    background-color: rgba(128, 128, 128, 0.1);
+  }
+
+  .information-swiper .swiper-pagination-bullet-active {
+    @apply opacity-100;
+  }
+
+  .mailchimp-subscribe-form > div {
+    @apply flex flex-col items-center w-64 gap-4;
+  }
+
+  .mailchimp-subscribe-form input {
+    @apply w-full px-4 py-3 text-lg bg-transparent border-2 border-white rounded-lg focus:outline-none;
+  }
+
+  .mailchimp-subscribe-form button {
+    @apply w-full button;
+  }
+
+  .information-swiper .swiper-pagination-bullet {
+    @apply text-[3rem];
+  }
+
+  .container .information-swiper div > .swiper  {
+    padding-top: 1rem!important;
+  }
+
+  @media (max-width: 1024px) {
+    .footerRow {
+      flex-direction: row-reverse;
+    }
+    .footerRow > li:last-child {
+      position: absolute;
+      top: 75%;
+      left: 55%;
+    }
+  }
+
+  .email-icon::before {
+    border-style: solid;
+    border-width: 0.15em 0.15em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.5em;
+    left: 0.15em;
+    position: relative;
+    top: 0.5em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.5em;
+    left: 0;
+	  transform: rotate(45deg);
+  }
+}
+
+@font-face {
+  src: url('/fonts/PPNeueMachina-Regular.otf');
+  font-family: 'PPNeueMachina';
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('/fonts/PPNeueMachina-Ultrabold.otf');
+  font-family: 'PPNeueMachina';
+  font-weight: 900;
+}
