@@ -67,7 +67,7 @@ const Dots = ({ style, size, seperation, amountx, amounty, position }: DotProps)
 export default function ParticleCanvas({ style, size, seperation, amountx, amounty, position }: DotProps) {
   return (
     <Canvas className="left-0 right-0 opacity-100"
-      style={{ ...style, 'margin-top': '18rem' }}
+      style={{ ...style, 'margin-top': '15rem' }}
       camera={{ fov: 120, position: position, near: -20, far: 1000 }}
     >
       <color attach="background" args={[0, 0, 0]} />

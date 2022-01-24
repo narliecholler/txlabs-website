@@ -9,8 +9,8 @@ import MeshLogo from '../MeshLogo';
 import ParticleCanvas from 'components/ParticleCanvas';
 
 const HeroSection = () => (
-  <Section className="bg-heroMobile bg-no-repeat bg-cover md:bg-hero lg:bg-hero-size bg-gradient lg:pb-[200px]">
-    <div className="py-20 container flex flex-col items-center gap-8">
+  <Section className="bg-heroMobile bg-no-repeat bg-cover lg:bg-hero lg:bg-hero-size bg-gradient lg:pb-[200px]">
+    <div className="pt-[8rem] pb-[3rem] container flex flex-col items-center gap-8">
       <Fade delay={500}>
         <MeshLogo />
         <div className="max-w-5xl">
@@ -32,7 +32,7 @@ const HeroSection = () => (
         </div>
       </Fade>
       <ParticleCanvas
-        style={{ position: "absolute", "margin-top": "15rem", "z-index": "-100" }}
+        style={{ position: "absolute", "margin-top": "12rem", "z-index": "-100" }}
         size={10}
         seperation={300}
         amountx={100}
