@@ -15,18 +15,18 @@ const HeroSection = () => (
         <MeshLogo />
         <div className="max-w-5xl">
           <h1 className="text-[2.4rem] leading-none text-center lg:text-[5rem]">
-            Empowering off-chain Web3 ecosystems.
+            Web3 Metalayer
           </h1>
         </div>
         <div className="text-scrambler">
           <TextScrambler
             phrases={[
-              'TX Mesh is a decentralized mesh network for creating off-chain services & applications.',
-              'TX Mesh facilitates off-chain data flow and service logic.',
-              'TX Mesh connects the Web2 and Web3 ecosystems.',
+              'TX Mesh is a Web3 metalayer empowering hybrid on-off-chain services & spplications.',
+              'TX Mesh facilitates on-off-chain data flow and service logic.',
+              'TX Mesh connects Web2 and Web3 ecosystems.',
             ]}
             speed={10}
-            pauseTime={5000}
+            pauseTime={7000}
             symbolColor="rgb(255, 255, 255)"
           />
         </div>
